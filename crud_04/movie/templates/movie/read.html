@@ -1,0 +1,17 @@
+{% extends "movie/base.html" %}
+{% block bodyblock %}
+
+    <h5>{{movie.title}}</h5>
+    <h5>{{movie.title_en}}</h5>
+    <h5>{{movie.audience}}</h5>
+    <h5>{{movie.open_date}}</h5>
+    <h5>{{movie.genre}}</h5>
+    <h5>{{movie.watch_grade}}</h5>
+    <h5>{{movie.score}}</h5>
+    <h5>{{movie.poster_url}}</h5>
+    <h5>{{movie.description}}</h5>
+    <a href="/movies/">목록</a>
+    <a href="/movies/{{movie.id}}/edit/">수정</a>
+    <a href="/movies/{{movie.id}}/delete/">삭제</a>
+    
+{% endblock %}

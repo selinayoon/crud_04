@@ -1,0 +1,11 @@
+{% extends "movie/base.html" %}
+{% block bodyblock %}
+ <link rel="stylesheet" href="/movie/new" type="text/css" />
+ <h1>여기는 인덱스 입니다.</h1>
+    {% for movie in movies %}
+        <h3><a href="/movies/{{movie.id}}">{{movie.title}}</a></h3>
+        <p>{{movie.score}}</p>
+        <!--<a href="/movies/{{todo.id}}/">할일보기</a>-->
+        <hr>
+    {% endfor %}
+{% endblock %}
